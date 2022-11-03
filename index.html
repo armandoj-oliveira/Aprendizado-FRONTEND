@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu HTML</title>
+
+        <style>
+            h1{
+                color: blueviolet;
+            }
+
+            p {
+                color: yellowgreen;
+            }
+
+            #cabecalho{
+                background-color: palegreen;
+            }
+
+            .fundo{
+                background-color: navajowhite
+            }
+
+            .bold {
+                color: black;
+            }
+
+            .img-proporcao{
+                width: 100px;
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="cabecalho" class="fundo">
+            Meu HTML
+        </h1>
+        <p>
+            Lorem <b class="bold">ipsum dolor</b> sit amet consectetur adipisicing elit. Corrupti possimus 
+            reprehenderit est fugit fuga, distinctio corporis. Odio voluptate laborum voluptatem mollitia 
+            magni totam fuga dolores est, numquam nostrum, facere officia.
+
+            <!--
+            TAGS QUE PODEM SER USADAS DENTRO DA TAG <P>
+
+                <b> - Estado Físico, negrito.
+                <strong> - Estado Lógico, podendo ser expressada.
+                    de maneiras diferentes além de deixar em negrito.
+
+                <i> - Estado Físico, itálico.
+                <em> - Estado Lógico, enfase, além de deixar em itálico.
+
+                <s> - Uma tag para riscar a palavra, mas não deleta da página.
+                <del> - Deleta algum argumento da página, mas não no código.
+                    Usado para saber onde alterações foram realizadas.
+
+                <u> - Uma tag para sublinhar a palavra, mas não insere nada na página.
+                <ins> - Inserindo elementos na página.
+                    Usado para saber onde alterações foram realizadas.
+
+                <small> - Uma tag para manipulação de texto, onde faz a palavra ficar menor.
+                <sup> - Uma tag para manipulação de texto, onde eleva algum elemento.
+                <sub> - Uma tag para manipulação de texto, onde desce algum elemento.
+
+                <br> - Uma tag para quebra de linha.
+                <q> - Uma tag para citação, podendo fazer referência com citação outras em páginas.
+
+                <code> - Uma tag para fazer com que trechos de código sejam mais visíveis no texto.
+
+                <span> - Contâiner genérico, inline.
+
+            -->
+
+        </p>
+
+            <!--
+            TAGS QUE PODEM SER USADAS FORA DA TAG <P>
+
+                <blockquote> - Uma tag que serve como um bloco de citação, podendo fazer referência.
+                    com citação em outras páginas.
+
+                    OBS.: Pode conter uma tag <p> dentro de <blockquote>, mas não o inverso.
+                
+                <hr> - Uma tag que pode servir como separação de tags <p> usando uma linha horizontal.
+
+                <pre> - Uma tag preformada, que consegue replicar os espaçamentos na página.
+                
+                <div> - Contâiner genérico, porém, é um bloco.
+
+            -->
+
+        <h1 class="fundo">
+            Vai vir algo <a href="https://validator.w3.org/nu/#textarea" target="_blank">aqui</a>
+        </h1>
+        <h1 style="color: black">Este é o H1</h1>
+        <h2>Este é o H2</h2>
+        <h3>Este é o H3</h3>
+        <h4>Este é o H4</h4>
+        <h5>Este é o H5</h5>
+        <h6>Este é o H6</h6>
+
+        <img class="img-proporcao"
+        src="https://criticalhits.com.br/wp-content/uploads/2019/10/ichigo-bleach.jpeg" 
+        alt="Bankai Ichigo">
+
+        <!--
+            OBS.: Tem como colocar Links por imagens
+        -->
+    
+    <div>
+        <pre>
+            EXEMPLO DE DAS TAG PRE E CODE
+            <code>      
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run(); 
+            </code> 
+        </pre>
+    </div>
+
+        <!--
+            SEPARAÇÃO DE CONTEÚDO
+
+            <adress> - Uma tag que fornece informações do contato.
+            
+            <article> - Uma tag que representa uma composição independente de um documento, página.
+            
+            <aside> - Uma tag que pode ter seu conteúdo considerado separado do restante.
+                Geralmente usado como barras laterais.
+            
+            <footer> - Uma tag que representa o rodapé da página.
+
+            <header> - Uma tag que representa o cabeçalho da página.
+            
+            <hgroup> - Uma tag que serve para agrupar cabeçalhos.
+
+            <main> - Uma tag que define o conteúdo principal do site, podendo haver apenas um Main.
+            
+            <nav> - Uma tag que geramente pode ser acompanhada de um <aside> e serve como navegação.
+            
+            <section> - Uma tag que, quando não existir um elemento semântico em uma seção, é utilizado uma
+                section.
+
+        -->
+
+        <header>
+            <h1>
+                <a href="#"> HOME </a>
+            </h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequuntur non distinctio 
+                labore consequatur, qui alias dignissimos. Magni nemo consequuntur illum rerum nihil? In,
+                possimus assumenda! Distinctio modi similique quo!
+            </p>
+
+            <div> Alinha alguma coisa </div>
+        </header>
+
+        <section>
+            <header>
+                <h2> Roupas Femininas </h2>
+            </header>
+
+            <article>
+                <h3>HEADING 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit animi quas ducimus nulla 
+                    dolor error doloribus nihil harum dicta perspiciatis? Fugit eius autem ad corporis alias itaque 
+                    facere hic velit?
+                </p>
+            </article>
+
+            <article>
+                <h3>HEADING 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit animi quas ducimus nulla 
+                    dolor error doloribus nihil harum dicta perspiciatis? Fugit eius autem ad corporis alias itaque 
+                    facere hic velit?
+                </p>
+            </article>
+
+            <article>
+                <h3>HEADING 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit animi quas ducimus nulla 
+                    dolor error doloribus nihil harum dicta perspiciatis? Fugit eius autem ad corporis alias itaque 
+                    facere hic velit?
+                </p>
+            </article>
+        </section>
+
+        <div>
+            <article>
+                <section>
+                    <h2>HEADING 2</h2>
+                </section>
+            </article>
+        </div>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">TEXTO 1</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <footer>
+            <h2>MEU ENDEREÇO</h2>
+        </footer>
+
+    </body>
+</html>
