@@ -4,48 +4,176 @@
 }
 
 body {
+
     background-image: url(
         https://assets.nflxext.com/ffe/siteui/vlv3/f669a8f4-de1e-49d7-bb56-c9bd1f4a9069/1527f5f9-936b-43ac-8fd8-3d6200c0ae25/BR-pt-20221031-popsignuptwoweeks-perspective_alpha_website_small.jpg
-    );
-    background-size: cover;
-}
-
-#heading {
-    display: flex;
-    background-color: #000;
-    justify-content: space-between;
-    z-index: 4;
-}
-
-#heading div {
-    width: 90%;
-    margin: 0 auto;
-    justify-content: space-between;
-    display: flex;
-}
-
-#heading h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 56px;
-    margin-right: 56px;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #e50914;
-}
-
-#heading a {
+        );
+        background-size: cover; 
+    }
+    
+a {
     color: inherit;
     text-decoration: none;
     font-family: sans-serif;
 }
 
-#heading select {
+hr{
+    color: #222;
+    height: 15px;
+    background-color: #222;
+    border: 0;
+}
+
+.heading {
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.heading div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 56px;
+    margin-right: 56px;
+}
+
+.heading h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #e50914;
+}
+
+
+.heading select {
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px;
+    margin-right: 10px;
+    padding: 11px;
     color: #fff;
     background-color: transparent;
     border-color: #fff;
     border-radius: 5px;
+}
+
+.heading option{
+    background-color: .696969;
+}
+
+.heading button{
+    background-color: #e50914;
+    color: #fff;
+    padding: 13px;
+    border-radius: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.introduction{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.introduction h1{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.introduction h2{
+    margin-top: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.introduction h3{
+    margin-top: 15px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+#txtBusca{
+    margin-top: 20px;
+    width: 530px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 0;
+}
+
+#btnBusca{
+    padding: 13px;
+    color: #fff;
+    background-color: #e50914;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.content-first{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+#gif-TV{
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.content-first h1 {
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.content-first h2{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 70px;
+    font-weight: lighter;
+    margin-bottom: 100px;
+}
+
+.content-second{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+#fig-cell{
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.content-second h1 {
+    margin-top: 70px;
+    margin-right: 70px;
+    margin-left: 70px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.content-second h2{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: lighter;
 }
